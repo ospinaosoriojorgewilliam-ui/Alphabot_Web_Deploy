@@ -98,7 +98,13 @@ placeholder = st.empty()
 
 while True:
     # Definimos datos vacíos para que la web cargue sin errores
-    acc = None
+   # Datos de prueba para que la web se vea activa
+    class MockAcc:
+        login = "Alphabot-Live"
+        balance = 10000.0
+        equity = 10500.0
+    
+    acc = MockAcc()
     pos = []
     hist = []
     
@@ -167,6 +173,7 @@ if acc:
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
             time.sleep(10)
+
 
 
 
