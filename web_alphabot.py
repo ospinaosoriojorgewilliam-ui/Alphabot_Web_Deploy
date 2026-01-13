@@ -166,7 +166,8 @@ if acc:
 
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
-        time.sleep(10)
+            time.sleep(10)
+
 
 
 
