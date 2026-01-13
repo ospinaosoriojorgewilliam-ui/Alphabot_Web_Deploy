@@ -97,9 +97,14 @@ def obtener_datos():
 placeholder = st.empty()
 
 while True:
-    with placeholder.container():
-        #acc, pos, hist = obtener_datos()
-        if acc:
+   # Definimos datos vacíos para que la web cargue sin errores
+acc = None
+pos = []
+hist = []
+
+# Ahora la web puede leer esto sin bloquearse
+if acc:
+    # ... (deja el resto del código igual)
             # --- EJECUCIÓN DEL MANDO DE NOTICIAS ---
             status_noticias = gestionar_noticias()
             if status_noticias['evento']:
@@ -161,4 +166,5 @@ while True:
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
         time.sleep(10)
+
 
