@@ -87,7 +87,7 @@ if st.sidebar.button('🚨 BOTÓN DE PÁNICO: CERRAR TODO', use_container_width=
         enviar_alerta_web("⚠️ CIERRE MASIVO EJECUTADO")
 
 def obtener_datos():
-    if not mt5.initialize(): return None, None, None
+    
     acc = mt5.account_info()
     pos = [p for p in (mt5.positions_get() or []) if p.magic in MAGIC_NUMBERS]
     desde = datetime.now().replace(hour=0, minute=0, second=0)
@@ -98,7 +98,7 @@ placeholder = st.empty()
 
 while True:
     with placeholder.container():
-        acc, pos, hist = obtener_datos()
+        #acc, pos, hist = obtener_datos()
         if acc:
             # --- EJECUCIÓN DEL MANDO DE NOTICIAS ---
             status_noticias = gestionar_noticias()
@@ -161,3 +161,4 @@ while True:
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
         time.sleep(10)
+
