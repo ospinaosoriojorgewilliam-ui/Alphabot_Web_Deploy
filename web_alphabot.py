@@ -1,5 +1,5 @@
 import streamlit as st
-import MetaTrader5 as mt5
+
 import pandas as pd
 import time
 import requests
@@ -159,4 +159,5 @@ while True:
                 st.dataframe(df_p[['symbol', 'type', 'volume', 'profit', 'magic']], use_container_width=True)
 
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
+
         time.sleep(10)
