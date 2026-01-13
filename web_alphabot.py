@@ -96,12 +96,13 @@ def obtener_datos():
 
 placeholder = st.empty()
 
-99  while True:
-100     # Línea de comentario con espacio
-101     acc = None   # <--- AQUÍ VA EL ESPACIO HACIA LA DERECHA
-102     pos = []     # <--- AQUÍ VA EL ESPACIO HACIA LA DERECHA
-103     hist = []    # <--- AQUÍ VA EL ESPACIO HACIA LA DERECHA
-
+while True:
+    # Definimos datos vacíos para que la web cargue sin errores
+    acc = None
+    pos = []
+    hist = []
+    
+    # El resto del código sigue abajo
 # Ahora la web puede leer esto sin bloquearse
 if acc:
     # ... (deja el resto del código igual)
@@ -166,6 +167,7 @@ if acc:
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
         time.sleep(10)
+
 
 
 
