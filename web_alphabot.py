@@ -99,8 +99,8 @@ placeholder = st.empty()
 while True:
    # Definimos datos vacíos para que la web cargue sin errores
 acc = None
-pos = []
-hist = []
+    pos = []
+    hist = []
 
 # Ahora la web puede leer esto sin bloquearse
 if acc:
@@ -166,5 +166,6 @@ if acc:
             st.caption(f"Alphabot System v12.0 | {time.strftime('%H:%M:%S')}")
 
         time.sleep(10)
+
 
 
